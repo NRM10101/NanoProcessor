@@ -1,0 +1,31 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f86a9cb48ae548c1a4bc628677711ffc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SimNanoProcessor_behav xil_defaultlib.SimNanoProcessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_Bank [reg_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_Way_4_Bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_Way_4_Bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Way_2_Bit3_Mux [way_2_bit3_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSubUnit [addsubunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionDecoder [instructiondecoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4 [rca_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter_3Bit [programcounter_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NanoProcessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.simnanoprocessor
+Built simulation snapshot SimNanoProcessor_behav

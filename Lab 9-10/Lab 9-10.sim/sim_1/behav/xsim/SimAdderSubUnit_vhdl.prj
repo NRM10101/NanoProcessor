@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab 9-10.srcs/sources_1/imports/MSI/Lab 3/Lab 3.srcs/sources_1/new/FA.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/MSI/Lab 3/Lab 3.srcs/sources_1/new/HA.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/MSI/RCA_4/RCA_4.srcs/sources_1/new/RCA_4.vhd" \
+"../../../../Lab 9-10.srcs/sources_1/imports/new/SimAdderSubUnit.vhd" \
+
+# Do not sort compile order
+nosort
