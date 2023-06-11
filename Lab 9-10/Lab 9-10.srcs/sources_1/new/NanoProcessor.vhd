@@ -33,7 +33,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity NanoProcessor is
     Port ( 
-    
            pushButton : in STD_LOGIC;
            jump_Flag: out std_logic;
            Address_to_jump:out std_logic_vector(2 downto 0);

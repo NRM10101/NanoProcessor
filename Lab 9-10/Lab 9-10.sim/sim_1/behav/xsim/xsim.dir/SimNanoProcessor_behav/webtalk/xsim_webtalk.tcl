@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Jun 11 00:07:35 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Jun 11 09:18:44 2023" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "35bde0ca-9424-42b7-b1c0-6002841b1286" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "f86a9cb48ae548c1a4bc628677711ffc" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "164" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "175" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz" -context "user_environment"
@@ -36,7 +36,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "183" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "55" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "0.45_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "53516_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 497825631 -regid "" -xml C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.66_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "53528_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 494419917 -regid "" -xml C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim/xsim.dir/SimNanoProcessor_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

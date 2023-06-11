@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Reg_Bank
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity InstructionDecoder
