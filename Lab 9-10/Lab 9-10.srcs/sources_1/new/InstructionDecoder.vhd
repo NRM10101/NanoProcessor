@@ -72,18 +72,22 @@ begin
             addSub_s<='0';
             loadSel<='1';
             regEn_s<=regA; --Register enable
+            
         elsif op = "01"then --NEG
             muxSelect_1<=regA;
             muxSelect_2<="000";
             addSub_s<='1';
             loadSel<='1';
             regEn_s<=regA;
+
         elsif op = "10" then --MOVI--
               --Register Enable
             immVal_s<=immediateValue_s;
             loadSel <='0';
             regEn_s<=regA;
-        elsif op = "11" then   --JZR --            
+
+        elsif op = "11" then   --JZR --  
+            regEn_s<="UUU";          
             muxSelect_1<=regA;
             jumpAddress<=immediateValue_s(2 downto 0);
             if RCJ= "0000" then   --PC<--D  regChkForJump
@@ -95,8 +99,8 @@ begin
     end process;
     
     JumpFlag <= jumpSel;
-    RegEn <= regEn_s;
     LS <= loadSel;
+    RegEn <= regEn_s;
     ImVal <= immVal_s;
     RegS1 <= muxSelect_1;
     RegS2 <= muxSelect_2;

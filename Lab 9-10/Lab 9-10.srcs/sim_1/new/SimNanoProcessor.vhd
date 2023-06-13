@@ -93,7 +93,7 @@ begin
     CLK <= NOT CLK;
  END PROCESS;
  PROCESS BEGIN
-    wait for 45 ns;
+    --wait for 45 ns;
     PUSHBUTTON<='1';
     wait for 60 ns;
     PUSHBUTTON<='0';

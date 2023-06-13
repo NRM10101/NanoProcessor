@@ -1,0 +1,272 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jun 14 03:49:47 2023
+| Host         : NRM running 64-bit major release  (build 9200)
+| Command      : report_methodology -file NanoProcessor_methodology_drc_routed.rpt -pb NanoProcessor_methodology_drc_routed.pb -rpx NanoProcessor_methodology_drc_routed.rpx
+| Design       : NanoProcessor
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 47
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell  | 32         |
+| TIMING-20 | Warning  | Non-clocked latch            | 14         |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell PROGRAMCOUNTER/loadSel_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) INSTRUCTIONDECODER0/loadSel_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-17#1 Warning
+Non-clocked sequential cell  
+The clock pin PROGRAMCOUNTER/MemSel_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Warning
+Non-clocked sequential cell  
+The clock pin PROGRAMCOUNTER/MemSel_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Warning
+Non-clocked sequential cell  
+The clock pin PROGRAMCOUNTER/MemSel_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_1/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_1/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_1/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_1/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_2/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_2/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_2/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_2/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_3/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_3/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_3/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_3/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_4/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_4/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_4/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_4/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_5/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_5/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_5/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_5/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_6/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_6/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_6/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_6/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_7/Q_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_7/Q_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_7/Q_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_7/Q_reg[2]_lopt_replica/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Warning
+Non-clocked sequential cell  
+The clock pin REGBANK/register_7/Q_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/immVal_s_reg[0] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/immVal_s_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/immVal_s_reg[1] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/immVal_s_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/jumpAddress_reg[0] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/jumpAddress_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/jumpAddress_reg[1] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/jumpAddress_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/loadSel_reg cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/loadSel_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_1_reg[0] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_1_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_1_reg[1] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_1_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_1_reg[2] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_1_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_2_reg[0] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_2_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_2_reg[1] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_2_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/muxSelect_2_reg[2] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/muxSelect_2_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/regEn_s_reg[0] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/regEn_s_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/regEn_s_reg[1] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/regEn_s_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch INSTRUCTIONDECODER0/regEn_s_reg[2] cannot be properly analyzed as its control pin INSTRUCTIONDECODER0/regEn_s_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+

@@ -11,14 +11,18 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="331477142fs"></ZoomEndTime>
-      <Cursor1Time time="684685000fs"></Cursor1Time>
+      <ZoomEndTime time="3573074246fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="216"></NameColumnWidth>
-      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+      <NameColumnWidth column_width="198"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="81" />
+   <wvobject fp_name="/SimNanoProcessor/PUSHBUTTON" type="logic">
+      <obj_property name="ElementShortName">PUSHBUTTON</obj_property>
+      <obj_property name="ObjectShortName">PUSHBUTTON</obj_property>
+   </wvobject>
    <wvobject fp_name="/SimNanoProcessor/LED_OVERFLOW" type="logic">
       <obj_property name="ElementShortName">LED_OVERFLOW</obj_property>
       <obj_property name="ObjectShortName">LED_OVERFLOW</obj_property>
@@ -26,31 +30,6 @@
    <wvobject fp_name="/SimNanoProcessor/LED_ZERO" type="logic">
       <obj_property name="ElementShortName">LED_ZERO</obj_property>
       <obj_property name="ObjectShortName">LED_ZERO</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/CLK" type="logic">
-      <obj_property name="ElementShortName">CLK</obj_property>
-      <obj_property name="ObjectShortName">CLK</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/PUSHBUTTON" type="logic">
-      <obj_property name="ElementShortName">PUSHBUTTON</obj_property>
-      <obj_property name="ObjectShortName">PUSHBUTTON</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/Instruction" type="array">
-      <obj_property name="ElementShortName">Instruction[11:0]</obj_property>
-      <obj_property name="ObjectShortName">Instruction[11:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/Register_Enable" type="array">
-      <obj_property name="ElementShortName">Register_Enable[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Register_Enable[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/Register_Bank_Data_In" type="array">
-      <obj_property name="ElementShortName">Register_Bank_Data_In[3:0]</obj_property>
-      <obj_property name="ObjectShortName">Register_Bank_Data_In[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/ImmValue" type="array">
-      <obj_property name="ElementShortName">ImmValue[3:0]</obj_property>
-      <obj_property name="ObjectShortName">ImmValue[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/SimNanoProcessor/LED" type="array">
       <obj_property name="ElementShortName">LED[3:0]</obj_property>
@@ -60,24 +39,308 @@
       <obj_property name="ElementShortName">LED_R6[3:0]</obj_property>
       <obj_property name="ObjectShortName">LED_R6[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/LED_R0" type="array">
-      <obj_property name="ElementShortName">LED_R0[3:0]</obj_property>
-      <obj_property name="ObjectShortName">LED_R0[3:0]</obj_property>
+   <wvobject fp_name="/SimNanoProcessor/ImmValue" type="array">
+      <obj_property name="ElementShortName">ImmValue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmValue[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/Address_to_jumpp" type="array">
-      <obj_property name="ElementShortName">Address_to_jumpp[2:0]</obj_property>
-      <obj_property name="ObjectShortName">Address_to_jumpp[2:0]</obj_property>
+   <wvobject fp_name="/SimNanoProcessor/LED_R5" type="array">
+      <obj_property name="ElementShortName">LED_R5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R5[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/SimNanoProcessor/jump_Flagg" type="logic">
-      <obj_property name="ElementShortName">jump_Flagg</obj_property>
-      <obj_property name="ObjectShortName">jump_Flagg</obj_property>
+   <wvobject fp_name="/SimNanoProcessor/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
    <wvobject fp_name="/SimNanoProcessor/nextInsVal" type="array">
       <obj_property name="ElementShortName">nextInsVal[2:0]</obj_property>
       <obj_property name="ObjectShortName">nextInsVal[2:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_Enable" type="array">
+      <obj_property name="ElementShortName">Register_Enable[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_Enable[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_Bank_Data_In" type="array">
+      <obj_property name="ElementShortName">Register_Bank_Data_In[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_Bank_Data_In[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/jump_Flagg" type="logic">
+      <obj_property name="ElementShortName">jump_Flagg</obj_property>
+      <obj_property name="ObjectShortName">jump_Flagg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Address_to_jumpp" type="array">
+      <obj_property name="ElementShortName">Address_to_jumpp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_to_jumpp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_check_for_jumpp" type="array">
+      <obj_property name="ElementShortName">Register_check_for_jumpp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_check_for_jumpp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED_R0" type="array">
+      <obj_property name="ElementShortName">LED_R0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/pushButton" type="logic">
+      <obj_property name="ElementShortName">pushButton</obj_property>
+      <obj_property name="ObjectShortName">pushButton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/jump_Flag" type="logic">
+      <obj_property name="ElementShortName">jump_Flag</obj_property>
+      <obj_property name="ObjectShortName">jump_Flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/Address_to_jump" type="array">
+      <obj_property name="ElementShortName">Address_to_jump[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_to_jump[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/Register_check_for_jump" type="array">
+      <obj_property name="ElementShortName">Register_check_for_jump[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_check_for_jump[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED_R0" type="array">
+      <obj_property name="ElementShortName">LED_R0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/Imm_Value" type="array">
+      <obj_property name="ElementShortName">Imm_Value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm_Value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/nextInsVal" type="array">
+      <obj_property name="ElementShortName">nextInsVal[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextInsVal[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/RegisterEnable" type="array">
+      <obj_property name="ElementShortName">RegisterEnable[2:0]</obj_property>
+      <obj_property name="ObjectShortName">RegisterEnable[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/RegisterBank_DataIn" type="array">
+      <obj_property name="ElementShortName">RegisterBank_DataIn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RegisterBank_DataIn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED" type="array">
+      <obj_property name="ElementShortName">LED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED_R6" type="array">
+      <obj_property name="ElementShortName">LED_R6[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R6[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED_R5" type="array">
+      <obj_property name="ElementShortName">LED_R5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED_OVERFLOW" type="logic">
+      <obj_property name="ElementShortName">LED_OVERFLOW</obj_property>
+      <obj_property name="ObjectShortName">LED_OVERFLOW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LED_ZERO" type="logic">
+      <obj_property name="ElementShortName">LED_ZERO</obj_property>
+      <obj_property name="ObjectShortName">LED_ZERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/sevenSegment" type="array">
+      <obj_property name="ElementShortName">sevenSegment[6:0]</obj_property>
+      <obj_property name="ObjectShortName">sevenSegment[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/MUX_0_OUT" type="array">
+      <obj_property name="ElementShortName">MUX_0_OUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_0_OUT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/MUX_1_OUT" type="array">
+      <obj_property name="ElementShortName">MUX_1_OUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">MUX_1_OUT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R0" type="array">
+      <obj_property name="ElementShortName">R0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R1" type="array">
+      <obj_property name="ElementShortName">R1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R2" type="array">
+      <obj_property name="ElementShortName">R2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R3" type="array">
+      <obj_property name="ElementShortName">R3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R4" type="array">
+      <obj_property name="ElementShortName">R4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R5" type="array">
+      <obj_property name="ElementShortName">R5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R6" type="array">
+      <obj_property name="ElementShortName">R6[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R6[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/R7" type="array">
+      <obj_property name="ElementShortName">R7[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R7[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/REG_BANK_IN" type="array">
+      <obj_property name="ElementShortName">REG_BANK_IN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_BANK_IN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/REG_S1" type="array">
+      <obj_property name="ElementShortName">REG_S1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_S1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/REG_S2" type="array">
+      <obj_property name="ElementShortName">REG_S2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_S2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/REG_EN" type="array">
+      <obj_property name="ElementShortName">REG_EN[2:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_EN[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LS_s" type="logic">
+      <obj_property name="ElementShortName">LS_s</obj_property>
+      <obj_property name="ObjectShortName">LS_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/IMMVAL" type="array">
+      <obj_property name="ElementShortName">IMMVAL[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IMMVAL[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/ASU_s" type="array">
+      <obj_property name="ElementShortName">ASU_s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ASU_s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/M" type="logic">
+      <obj_property name="ElementShortName">M</obj_property>
+      <obj_property name="ObjectShortName">M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/OVERFLOW" type="logic">
+      <obj_property name="ElementShortName">OVERFLOW</obj_property>
+      <obj_property name="ObjectShortName">OVERFLOW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/ZERO" type="logic">
+      <obj_property name="ElementShortName">ZERO</obj_property>
+      <obj_property name="ObjectShortName">ZERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/C_OUT" type="logic">
+      <obj_property name="ElementShortName">C_OUT</obj_property>
+      <obj_property name="ObjectShortName">C_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/InsBus" type="array">
+      <obj_property name="ElementShortName">InsBus[11:0]</obj_property>
+      <obj_property name="ObjectShortName">InsBus[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/JUMPFLAG" type="logic">
+      <obj_property name="ElementShortName">JUMPFLAG</obj_property>
+      <obj_property name="ObjectShortName">JUMPFLAG</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/ATJ" type="array">
+      <obj_property name="ElementShortName">ATJ[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ATJ[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/MEMORYSELECT" type="array">
+      <obj_property name="ElementShortName">MEMORYSELECT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">MEMORYSELECT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/THREE_BIT_ADDER_OUT" type="array">
+      <obj_property name="ElementShortName">THREE_BIT_ADDER_OUT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">THREE_BIT_ADDER_OUT[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/C_OUTT" type="logic">
+      <obj_property name="ElementShortName">C_OUTT</obj_property>
+      <obj_property name="ObjectShortName">C_OUTT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/NextIns" type="array">
+      <obj_property name="ElementShortName">NextIns[2:0]</obj_property>
+      <obj_property name="ObjectShortName">NextIns[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/SLOW_CLOCK_OUT" type="logic">
+      <obj_property name="ElementShortName">SLOW_CLOCK_OUT</obj_property>
+      <obj_property name="ObjectShortName">SLOW_CLOCK_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/LUT_ADDRESS" type="array">
+      <obj_property name="ElementShortName">LUT_ADDRESS[6:0]</obj_property>
+      <obj_property name="ObjectShortName">LUT_ADDRESS[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/UUT/pushButton_s" type="logic">
+      <obj_property name="ElementShortName">pushButton_s</obj_property>
+      <obj_property name="ObjectShortName">pushButton_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/PUSHBUTTON" type="logic">
+      <obj_property name="ElementShortName">PUSHBUTTON</obj_property>
+      <obj_property name="ObjectShortName">PUSHBUTTON</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED_OVERFLOW" type="logic">
+      <obj_property name="ElementShortName">LED_OVERFLOW</obj_property>
+      <obj_property name="ObjectShortName">LED_OVERFLOW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED_ZERO" type="logic">
+      <obj_property name="ElementShortName">LED_ZERO</obj_property>
+      <obj_property name="ObjectShortName">LED_ZERO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED" type="array">
+      <obj_property name="ElementShortName">LED[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED_R6" type="array">
+      <obj_property name="ElementShortName">LED_R6[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R6[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/ImmValue" type="array">
+      <obj_property name="ElementShortName">ImmValue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmValue[3:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/SimNanoProcessor/LED_R5" type="array">
       <obj_property name="ElementShortName">LED_R5[3:0]</obj_property>
       <obj_property name="ObjectShortName">LED_R5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/nextInsVal" type="array">
+      <obj_property name="ElementShortName">nextInsVal[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextInsVal[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_Enable" type="array">
+      <obj_property name="ElementShortName">Register_Enable[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_Enable[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_Bank_Data_In" type="array">
+      <obj_property name="ElementShortName">Register_Bank_Data_In[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_Bank_Data_In[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/jump_Flagg" type="logic">
+      <obj_property name="ElementShortName">jump_Flagg</obj_property>
+      <obj_property name="ObjectShortName">jump_Flagg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Address_to_jumpp" type="array">
+      <obj_property name="ElementShortName">Address_to_jumpp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_to_jumpp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/Register_check_for_jumpp" type="array">
+      <obj_property name="ElementShortName">Register_check_for_jumpp[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Register_check_for_jumpp[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SimNanoProcessor/LED_R0" type="array">
+      <obj_property name="ElementShortName">LED_R0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_R0[3:0]</obj_property>
    </wvobject>
 </wave_config>

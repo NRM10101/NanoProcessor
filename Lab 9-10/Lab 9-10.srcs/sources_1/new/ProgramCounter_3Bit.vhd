@@ -40,16 +40,27 @@ end ProgramCounter_3Bit;
 
 architecture Behavioral of ProgramCounter_3Bit is
 begin
-    process(Clk)
+    process(Clk,Reset_PushButton)
     begin
-    if(rising_edge(Clk)) then
-        if(Reset_PushButton='1') then
-          MemSel<="000";
-        else
-          MemSel<=pc_in;
+    if(Reset_PushButton='1') then
+        MemSel<="000";
+    else
+        if(rising_edge(Clk)) then
+            MemSel<=pc_in;
         end if;
-    end if;
+     end if;
 end process;
+--begin
+--    process(Clk)
+--    begin
+--    if(rising_edge(Clk)) then
+--        if(Reset_PushButton='1') then
+--          MemSel<="000";
+--        else
+--          MemSel<=pc_in;
+--        end if;
+--    end if;
+--end process;
 
 
 end Behavioral;

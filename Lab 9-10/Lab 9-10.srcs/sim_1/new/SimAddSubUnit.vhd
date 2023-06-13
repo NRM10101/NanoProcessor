@@ -97,6 +97,29 @@ process
         B1 <= '1';
         B2 <= '0';
         B3 <= '0';
+         M<='1';
+    WAIT FOR 100 ns; -- after 100 ns change inputs
+         
+             A0 <= '1'; -- set initial values
+             A1 <= '0';
+             A2 <= '1';
+             A3 <= '0';
+             B0 <= '1'; -- set initial values
+             B1 <= '1';
+             B2 <= '0';
+             B3 <= '0';
+              M<='0';
+       WAIT FOR 100 ns; -- after 100 ns change inputs
+                   
+                       A0 <= '1'; -- set initial values
+                       A1 <= '0';
+                       A2 <= '1';
+                       A3 <= '0';
+                       B0 <= '1'; -- set initial values
+                       B1 <= '1';
+                       B2 <= '0';
+                       B3 <= '0';
+                        M<='1';
     
     WAIT FOR 100 ns; -- after 100 ns change inputs
     
@@ -108,6 +131,7 @@ process
         B1 <= '1';
         B2 <= '0';
         B3 <= '1';
+   
      
     WAIT FOR 100 ns; -- after 100 ns change inputs
         
@@ -119,6 +143,7 @@ process
         B1 <= '1';
         B2 <= '1';
         B3 <= '0';
+        M<='0';
      
      WAIT FOR 100 ns; -- after 100 ns change inputs
             

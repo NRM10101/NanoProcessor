@@ -50,7 +50,8 @@ entity NanoProcessor is
            LED_R5 : out std_logic_vector(3 downto 0);
            LED_OVERFLOW:out STD_LOGIC;
            LED_ZERO:out STD_LOGIC;
-           Instruction : out std_logic_vector(11 downto 0));
+           Instruction : out std_logic_vector(11 downto 0);
+           sevenSegment:out std_logic_vector(6 downto 0));
 end NanoProcessor;
 
 architecture Behavioral of NanoProcessor is
@@ -144,6 +145,11 @@ COMPONENT ProgramCounter_3Bit is
            pc_in : in STD_LOGIC_VECTOR (2 downto 0);
            MemSel : out STD_LOGIC_VECTOR (2 downto 0));
 end COMPONENT;
+COMPONENT LUT_16_7 is
+    Port ( address : in STD_LOGIC_VECTOR (3 downto 0);
+           data : out STD_LOGIC_VECTOR (6 downto 0));
+end COMPONENT;
+----------------------------------------------------------------------------------------------
 SIGNAL CLOCK:STD_LOGIC;
 -----MUX 8 X 1
 SIGNAL MUX_0_OUT,MUX_1_OUT:STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -167,11 +173,14 @@ SIGNAL C_OUTT:STD_LOGIC;
 SIGNAL NextIns:STD_LOGIC_VECTOR(2 DOWNTO 0);
 
 SIGNAL SLOW_CLOCK_OUT:STD_LOGIC;
+--- LUT
+SIGNAL LUT_ADDRESS:STD_LOGIC_VECTOR(6 DOWNTO 0);
 
 signal pushButton_s : std_logic;
 ----------------------------------------------------------------------------------------------------
 begin
     pushButton_s <= pushButton;
+
 REGBANK :Reg_Bank
     port map(
     Clk=>CLOCK,
@@ -282,11 +291,15 @@ PROGRAMCOUNTER:ProgramCounter_3Bit
     pc_in=>NextIns,
     MemSel=>MEMORYSELECT
     );
+SEVEN_SEGMENT : LUT_16_7
+   port map(
+   address=>R7,
+   data=>LUT_ADDRESS
+ );
     --SET OUTPUTS TO LEDS-----------------------------------
-
     CLOCK <= Clk;
     nextInsVal <= NextIns;
---    pushButton_s <= pushButton;
+--  pushButton_s <= pushButton;
     LED<=R7;
     LED_R6 <= R6;
     LED_R5 <= R5;
@@ -300,4 +313,5 @@ PROGRAMCOUNTER:ProgramCounter_3Bit
     Address_to_jump<=ATJ;
     Register_check_for_jump<=MUX_0_OUT;
     LED_R0<=R0;
+    sevenSegment<=LUT_ADDRESS;
 end Behavioral;
