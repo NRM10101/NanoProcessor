@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Jun 14 03:49:32 2023
+| Date         : Thu Jun 15 13:32:12 2023
 | Host         : NRM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file NanoProcessor_control_sets_placed.rpt
 | Design       : NanoProcessor
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    14 |
-| Unused register locations in slices containing registers |    28 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    32 |
 +----------------------------------------------------------+-------+
 
 
@@ -36,9 +36,10 @@ Table of Contents
 +--------+--------------+
 |      2 |            1 |
 |      4 |            2 |
-|      6 |            4 |
+|      6 |            5 |
 |      8 |            6 |
 |     10 |            1 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -48,11 +49,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |            6 |
-| No           | No                    | Yes                    |               6 |            2 |
-| No           | Yes                   | No                     |               2 |            1 |
+| No           | No                    | No                     |              32 |            7 |
+| No           | No                    | Yes                    |               6 |            1 |
+| No           | Yes                   | No                     |              64 |            9 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              58 |           13 |
+| Yes          | No                    | Yes                    |              58 |            9 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -60,23 +61,25 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
-|            Clock Signal            |                        Enable Signal                       |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
-+------------------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
-|  PROGRAMCOUNTER/E[0]               |                                                            | PROGRAMCOUNTER/Q_reg[1][0] |                1 |              2 |
-|  PROGRAMCOUNTER/E[0]               |                                                            |                            |                1 |              4 |
-|  PROGRAMCOUNTER/MemSel_reg[1]_0[0] |                                                            |                            |                1 |              4 |
-|  PROGRAMCOUNTER/Q_reg[3]_0[0]      |                                                            |                            |                1 |              6 |
-|  PROGRAMCOUNTER/Q_reg[1][0]        |                                                            |                            |                2 |              6 |
-|  PROGRAMCOUNTER/Q_reg[3]_1[0]      |                                                            |                            |                1 |              6 |
-|  Clk_IBUF_BUFG                     |                                                            | pushButton_IBUF            |                2 |              6 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[1] | pushButton_IBUF            |                2 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[1] | pushButton_IBUF            |                1 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[2] | pushButton_IBUF            |                1 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[0] | pushButton_IBUF            |                2 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[0] | pushButton_IBUF            |                2 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[2] | pushButton_IBUF            |                2 |              8 |
-|  Clk_IBUF_BUFG                     | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[3] | pushButton_IBUF            |                3 |             10 |
-+------------------------------------+------------------------------------------------------------+----------------------------+------------------+----------------+
++------------------------------------+------------------------------------------------------------+-----------------------------+------------------+----------------+
+|            Clock Signal            |                        Enable Signal                       |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------------+------------------------------------------------------------+-----------------------------+------------------+----------------+
+|  PROGRAMCOUNTER/E[0]               |                                                            | PROGRAMCOUNTER/Q_reg[1][0]  |                1 |              2 |
+|  PROGRAMCOUNTER/E[0]               |                                                            |                             |                1 |              4 |
+|  PROGRAMCOUNTER/MemSel_reg[1]_0[0] |                                                            |                             |                1 |              4 |
+|  PROGRAMCOUNTER/Q_reg[1][0]        |                                                            |                             |                1 |              6 |
+|  PROGRAMCOUNTER/Q_reg[3]_1[0]      |                                                            |                             |                1 |              6 |
+|  PROGRAMCOUNTER/Q_reg[3]_0[0]      |                                                            |                             |                1 |              6 |
+|  Clk_IBUF_BUFG                     |                                                            |                             |                2 |              6 |
+|  MemSel_reg[2]_i_2_n_0             |                                                            | pushButton_IBUF             |                1 |              6 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[2] | pushButton_IBUF             |                2 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[0] | pushButton_IBUF             |                1 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_0/decoder_out[1] | pushButton_IBUF             |                1 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[1] | pushButton_IBUF             |                1 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[0] | pushButton_IBUF             |                1 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[2] | pushButton_IBUF             |                1 |              8 |
+|  MemSel_reg[2]_i_2_n_0             | REGBANK/Decoder_reg_enable/Decoder_2_to_4_1/decoder_out[3] | pushButton_IBUF             |                2 |             10 |
+|  Clk_IBUF_BUFG                     |                                                            | SLOWCLOCK/count[31]_i_1_n_0 |                8 |             62 |
++------------------------------------+------------------------------------------------------------+-----------------------------+------------------+----------------+
 
 

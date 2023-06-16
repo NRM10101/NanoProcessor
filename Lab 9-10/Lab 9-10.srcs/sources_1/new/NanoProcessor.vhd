@@ -34,23 +34,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity NanoProcessor is
     Port ( 
            pushButton : in STD_LOGIC;
-           jump_Flag: out std_logic;
-           Address_to_jump:out std_logic_vector(2 downto 0);
+--           jump_Flag: out std_logic;
+--           Address_to_jump:out std_logic_vector(2 downto 0);
            
-           Register_check_for_jump:out std_logic_vector(3 downto 0);
-           LED_R0:out std_logic_vector(3 downto 0);
+--           Register_check_for_jump:out std_logic_vector(3 downto 0);
+--           LED_R0:out std_logic_vector(3 downto 0);
            
-           Imm_Value:out std_logic_vector(3 downto 0);
+--           Imm_Value:out std_logic_vector(3 downto 0);
            Clk : in STD_LOGIC;
-           nextInsVal : out std_logic_vector(2 downto 0);
-           RegisterEnable:out std_logic_vector(2 downto 0);
-           RegisterBank_DataIn: out std_logic_vector(3 downto 0);
+--           nextInsVal : out std_logic_vector(2 downto 0);
+--           RegisterEnable:out std_logic_vector(2 downto 0);
+--           RegisterBank_DataIn: out std_logic_vector(3 downto 0);
            LED : out STD_LOGIC_VECTOR (3 downto 0);
-           LED_R6 : out std_logic_vector(3 downto 0);
-           LED_R5 : out std_logic_vector(3 downto 0);
+--           LED_R6 : out std_logic_vector(3 downto 0);
+--           LED_R5 : out std_logic_vector(3 downto 0);
            LED_OVERFLOW:out STD_LOGIC;
            LED_ZERO:out STD_LOGIC;
-           Instruction : out std_logic_vector(11 downto 0);
+--           Instruction : out std_logic_vector(11 downto 0);
+           anode:out STD_LOGIC_VECTOR(3 downto 0):="1110";
            sevenSegment:out std_logic_vector(6 downto 0));
 end NanoProcessor;
 
@@ -180,22 +181,6 @@ signal pushButton_s : std_logic;
 ----------------------------------------------------------------------------------------------------
 begin
     pushButton_s <= pushButton;
-
-REGBANK :Reg_Bank
-    port map(
-    Clk=>CLOCK,
-    Reg_EN=>REG_EN,
-    Reg_Bank_In=>REG_BANK_IN,
-    Reg_B_Out_0=>R0,
-    Reg_B_Out_1=>R1,
-    Reg_B_Out_2=>R2,
-    Reg_B_Out_3=>R3,
-    Reg_B_Out_4=>R4,
-    Reg_B_Out_5=>R5,
-    Reg_B_Out_6=>R6,
-    Reg_B_Out_7=>R7,
-    push_button=>pushButton_s
-    );
 MUX8X1_0:Mux_8_Way_4_Bit
     port map(
      Reg_Sel =>REG_S1,
@@ -286,32 +271,48 @@ SLOWCLOCK :Slow_Clk
 PROGRAMCOUNTER:ProgramCounter_3Bit
     Port map(
     Reset_PushButton=>pushButton_s,
-    --Clk=>SLOW_CLOCK_OUT,
-    Clk=>CLOCK,
+    Clk=>SLOW_CLOCK_OUT,
+    --Clk=>CLOCK,
     pc_in=>NextIns,
     MemSel=>MEMORYSELECT
     );
+REGBANK :Reg_Bank
+        port map(
+        --Clk=>CLOCK,
+        Clk=>SLOW_CLOCK_OUT,
+        Reg_EN=>REG_EN,
+        Reg_Bank_In=>REG_BANK_IN,
+        Reg_B_Out_0=>R0,
+        Reg_B_Out_1=>R1,
+        Reg_B_Out_2=>R2,
+        Reg_B_Out_3=>R3,
+        Reg_B_Out_4=>R4,
+        Reg_B_Out_5=>R5,
+        Reg_B_Out_6=>R6,
+        Reg_B_Out_7=>R7,
+        push_button=>pushButton_s
+        );
 SEVEN_SEGMENT : LUT_16_7
    port map(
    address=>R7,
    data=>LUT_ADDRESS
  );
     --SET OUTPUTS TO LEDS-----------------------------------
-    CLOCK <= Clk;
-    nextInsVal <= NextIns;
+    CLOCK <= SLOW_CLOCK_OUT;
+    --nextInsVal <= NextIns;
 --  pushButton_s <= pushButton;
     LED<=R7;
-    LED_R6 <= R6;
-    LED_R5 <= R5;
+--    LED_R6 <= R6;
+--    LED_R5 <= R5;
     LED_OVERFLOW<=OVERFLOW;
     LED_ZERO<=ZERO;
-    RegisterEnable<=REG_EN;
-    RegisterBank_DataIn<=REG_BANK_IN;
-    Imm_Value<=IMMVAL;
-    Instruction <= InsBus;
-    jump_Flag<=JUMPFLAG;
-    Address_to_jump<=ATJ;
-    Register_check_for_jump<=MUX_0_OUT;
-    LED_R0<=R0;
+--    RegisterEnable<=REG_EN;
+--    RegisterBank_DataIn<=REG_BANK_IN;
+--    Imm_Value<=IMMVAL;
+--    Instruction <= InsBus;
+--    jump_Flag<=JUMPFLAG;
+--    Address_to_jump<=ATJ;
+--    Register_check_for_jump<=MUX_0_OUT;
+--    LED_R0<=R0;
     sevenSegment<=LUT_ADDRESS;
 end Behavioral;

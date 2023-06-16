@@ -1,0 +1,532 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 15 11:44:10 2023
+# Process ID: 28000
+# Current directory: C:/Users/MSI/Lab 9-10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20628 C:\Users\MSI\Lab 9-10\Lab 9-10.xpr
+# Log file: C:/Users/MSI/Lab 9-10/vivado.log
+# Journal file: C:/Users/MSI/Lab 9-10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/MSI/Lab 9-10/Lab 9-10.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SimNanoProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SimNanoProcessor_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f86a9cb48ae548c1a4bc628677711ffc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SimNanoProcessor_behav xil_defaultlib.SimNanoProcessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SimNanoProcessor_behav -key {Behavioral:sim_1:Functional:SimNanoProcessor} -tclbatch {SimNanoProcessor.tcl} -view {{C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}} -view {{C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}
+WARNING: Simulation object /SimNanoProcessor/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/ImmValue was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Enable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Bank_Data_In was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/jump_Flagg was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Address_to_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_check_for_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R0 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/jump_Flag was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Address_to_jump was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Register_check_for_jump was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R0 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Imm_Value was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/RegisterEnable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/RegisterBank_DataIn was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/ImmValue was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Enable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Bank_Data_In was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/jump_Flagg was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Address_to_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_check_for_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R0 was not found in the design.
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}
+source SimNanoProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SimNanoProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: NanoProcessor
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1108.801 ; gain = 102.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:57]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_0' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (1#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (2#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_Way_4_Bit' (3#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_1' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:195]
+INFO: [Synth 8-3491] module 'Mux_2_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:35' bound to instance 'MUX2X1_4BIT' of component 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_Way_4_Bit' (4#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-3491] module 'Way_2_Bit3_Mux' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:34' bound to instance 'MUX2X1_3BIT' of component 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Way_2_Bit3_Mux' (5#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-3491] module 'AddSubUnit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:32' bound to instance 'ADDSUBUNIT_0' of component 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (6#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'FA' (7#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:74]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'AddSubUnit' (8#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:32' bound to instance 'INSTRUCTIONDECODER0' of component 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+WARNING: [Synth 8-614] signal 'RCJ' is read in the process but is not in the sensitivity list [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (9#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:34' bound to instance 'THREEBITADDER' of component 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:64]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (10#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'ProgramROM' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:34' bound to instance 'ROM' of component 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ProgramROM' (11#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:24' bound to instance 'SLOWCLOCK' of component 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (12#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-3491] module 'ProgramCounter_3Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:34' bound to instance 'PROGRAMCOUNTER' of component 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:270]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter_3Bit' (13#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-3491] module 'Reg_Bank' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:34' bound to instance 'REGBANK' of component 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_reg_enable' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:74]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_0' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (14#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_1' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:90]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_2' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:98]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_3' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:106]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_4' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:114]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_5' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:122]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_6' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:130]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_7' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'Reg_Bank' (15#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'SEVEN_SEGMENT' of component 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (16#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (17#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:57]
+WARNING: [Synth 8-3331] design RCA_4 has unconnected port C_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1154.340 ; gain = 148.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1154.340 ; gain = 148.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1154.340 ; gain = 148.301
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Finished Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.461 ; gain = 531.422
+71 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.461 ; gain = 531.422
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SimNanoProcessor' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj SimNanoProcessor_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NanoProcessor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f86a9cb48ae548c1a4bc628677711ffc --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot SimNanoProcessor_behav xil_defaultlib.SimNanoProcessor -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_Way_4_Bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_Way_4_Bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Way_2_Bit3_Mux [way_2_bit3_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.AddSubUnit [addsubunit_default]
+Compiling architecture behavioral of entity xil_defaultlib.InstructionDecoder [instructiondecoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.RCA_4 [rca_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramROM [programrom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter_3Bit [programcounter_3bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg_Bank [reg_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.LUT_16_7 [lut_16_7_default]
+Compiling architecture behavioral of entity xil_defaultlib.NanoProcessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.simnanoprocessor
+Built simulation snapshot SimNanoProcessor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/MSI/Lab 9-10/Lab 9-10.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SimNanoProcessor_behav -key {Behavioral:sim_1:Functional:SimNanoProcessor} -tclbatch {SimNanoProcessor.tcl} -view {{C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}} -view {{C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}
+WARNING: Simulation object /SimNanoProcessor/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/ImmValue was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Enable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Bank_Data_In was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/jump_Flagg was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Address_to_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_check_for_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R0 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/jump_Flag was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Address_to_jump was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Register_check_for_jump was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R0 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Imm_Value was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/RegisterEnable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/RegisterBank_DataIn was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/UUT/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R6 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/ImmValue was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R5 was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/nextInsVal was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Enable was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_Bank_Data_In was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Instruction was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/jump_Flagg was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Address_to_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/Register_check_for_jumpp was not found in the design.
+WARNING: Simulation object /SimNanoProcessor/LED_R0 was not found in the design.
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}
+source SimNanoProcessor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SimNanoProcessor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.461 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1540.848 ; gain = 3.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:58]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_0' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (1#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (2#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_Way_4_Bit' (3#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_1' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:196]
+INFO: [Synth 8-3491] module 'Mux_2_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:35' bound to instance 'MUX2X1_4BIT' of component 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_Way_4_Bit' (4#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-3491] module 'Way_2_Bit3_Mux' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:34' bound to instance 'MUX2X1_3BIT' of component 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Way_2_Bit3_Mux' (5#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-3491] module 'AddSubUnit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:32' bound to instance 'ADDSUBUNIT_0' of component 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (6#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'FA' (7#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:74]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'AddSubUnit' (8#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:32' bound to instance 'INSTRUCTIONDECODER0' of component 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+WARNING: [Synth 8-614] signal 'RCJ' is read in the process but is not in the sensitivity list [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (9#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:34' bound to instance 'THREEBITADDER' of component 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:64]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (10#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'ProgramROM' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:34' bound to instance 'ROM' of component 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ProgramROM' (11#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:24' bound to instance 'SLOWCLOCK' of component 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (12#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-3491] module 'ProgramCounter_3Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:34' bound to instance 'PROGRAMCOUNTER' of component 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter_3Bit' (13#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-3491] module 'Reg_Bank' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:34' bound to instance 'REGBANK' of component 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_reg_enable' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:74]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_0' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (14#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_1' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:90]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_2' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:98]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_3' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:106]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_4' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:114]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_5' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:122]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_6' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:130]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_7' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'Reg_Bank' (15#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'SEVEN_SEGMENT' of component 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (16#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+WARNING: [Synth 8-3848] Net anode in module/entity NanoProcessor does not have driver. [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (17#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:58]
+WARNING: [Synth 8-3331] design RCA_4 has unconnected port C_in
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[3]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[2]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[1]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1583.914 ; gain = 46.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1583.914 ; gain = 46.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1583.914 ; gain = 46.453
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Finished Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1586.258 ; gain = 48.797
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1586.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'NanoProcessor' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:58]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_0' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (1#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (2#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_Way_4_Bit' (3#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:47]
+INFO: [Synth 8-3491] module 'Mux_8_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/Multiplexer_8_Way_4bit.srcs/sources_1/new/Mux_8_Way_4_Bit.vhd:34' bound to instance 'MUX8X1_1' of component 'Mux_8_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:196]
+INFO: [Synth 8-3491] module 'Mux_2_Way_4_Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:35' bound to instance 'MUX2X1_4BIT' of component 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_Way_4_Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_Way_4_Bit' (4#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/Mux_2_Way_4_Bit.vhd:42]
+INFO: [Synth 8-3491] module 'Way_2_Bit3_Mux' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:34' bound to instance 'MUX2X1_3BIT' of component 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:214]
+INFO: [Synth 8-638] synthesizing module 'Way_2_Bit3_Mux' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Way_2_Bit3_Mux' (5#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/2_Way_3_Bit_Mux.vhd:41]
+INFO: [Synth 8-3491] module 'AddSubUnit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:32' bound to instance 'ADDSUBUNIT_0' of component 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'AddSubUnit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (6#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'FA' (7#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:43]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:74]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:83]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'AddSubUnit' (8#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/AddSubUnit.vhd:51]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:32' bound to instance 'INSTRUCTIONDECODER0' of component 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+WARNING: [Synth 8-614] signal 'RCJ' is read in the process but is not in the sensitivity list [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (9#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/InstructionDecoder.vhd:45]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:34' bound to instance 'THREEBITADDER' of component 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:57]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:64]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (10#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/3bitAdder.srcs/sources_1/imports/new/RCA_4.vhd:42]
+INFO: [Synth 8-3491] module 'ProgramROM' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:34' bound to instance 'ROM' of component 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'ProgramROM' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ProgramROM' (11#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramROM.vhd:39]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:24' bound to instance 'SLOWCLOCK' of component 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (12#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd:29]
+INFO: [Synth 8-3491] module 'ProgramCounter_3Bit' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:34' bound to instance 'PROGRAMCOUNTER' of component 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter_3Bit' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter_3Bit' (13#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/ProgramCounter_3Bit.vhd:41]
+INFO: [Synth 8-3491] module 'Reg_Bank' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:34' bound to instance 'REGBANK' of component 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:279]
+INFO: [Synth 8-638] synthesizing module 'Reg_Bank' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:33' bound to instance 'Decoder_reg_enable' of component 'Decoder_3_to_8' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:74]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_0' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (14#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:40]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_1' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:90]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_2' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:98]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_3' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:106]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_4' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:114]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_5' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:122]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_6' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:130]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/sources_1/imports/new/Reg.vhd:32' bound to instance 'register_7' of component 'Reg' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'Reg_Bank' (15#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Reg_Bank.vhd:50]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'SEVEN_SEGMENT' of component 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (16#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+WARNING: [Synth 8-3848] Net anode in module/entity NanoProcessor does not have driver. [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'NanoProcessor' (17#1) [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd:58]
+WARNING: [Synth 8-3331] design RCA_4 has unconnected port C_in
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[3]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[2]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[1]
+WARNING: [Synth 8-3331] design NanoProcessor has unconnected port anode[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1591.125 ; gain = 4.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1591.125 ; gain = 4.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1591.125 ; gain = 4.867
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Finished Parsing XDC File [C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/constrs_1/new/NanoProcessor.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/MSI/Lab 9-10/Lab 9-10.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Thu Jun 15 12:36:11 2023] Launched synth_1...
+Run output will be captured here: C:/Users/MSI/Lab 9-10/Lab 9-10.runs/synth_1/runme.log

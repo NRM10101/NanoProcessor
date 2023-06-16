@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/new/NanoProcessor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NanoProcessor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/MSI/Lab 9-10/Lab 9-10.srcs/sources_1/imports/new/Slow_Clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Slow_Clk

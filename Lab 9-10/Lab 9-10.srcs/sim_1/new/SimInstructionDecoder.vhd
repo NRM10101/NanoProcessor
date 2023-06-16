@@ -37,7 +37,8 @@ end SimInstructionDecoder;
 
 architecture Behavioral of SimInstructionDecoder is
 component InstructionDecoder
-       Port ( InsBus : in STD_LOGIC_VECTOR (11 downto 0);  --instruction bus
+       Port (
+        InsBus : in STD_LOGIC_VECTOR (11 downto 0);  --instruction bus
        RCJ : in STD_LOGIC_VECTOR (3 downto 0);      --Register check for jump
        RegEn : out STD_LOGIC_VECTOR (2 downto 0);   --Register Enable
        LS : out STD_LOGIC;                          --Load Select

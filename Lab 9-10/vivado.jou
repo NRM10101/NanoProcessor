@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 15 12:41:16 2023
+# Process ID: 15896
+# Current directory: C:/Users/MSI/Lab 9-10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15668 C:\Users\MSI\Lab 9-10\Lab 9-10.xpr
+# Log file: C:/Users/MSI/Lab 9-10/vivado.log
+# Journal file: C:/Users/MSI/Lab 9-10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/MSI/Lab 9-10/Lab 9-10.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/MSI/Lab 9-10/Lab 9-10.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MSI/Lab 9-10/Lab 9-10.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/MSI/Lab 9-10/Lab 9-10.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/MSI/Lab 9-10/Lab 9-10.runs/impl_1/NanoProcessor.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run impl_1
+open_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}
+source SimNanoProcessor.tcl
+close_sim

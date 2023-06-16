@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 15 11:44:10 2023
+# Process ID: 28000
+# Current directory: C:/Users/MSI/Lab 9-10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20628 C:\Users\MSI\Lab 9-10\Lab 9-10.xpr
+# Log file: C:/Users/MSI/Lab 9-10/vivado.log
+# Journal file: C:/Users/MSI/Lab 9-10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/MSI/Lab 9-10/Lab 9-10.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}
+source SimNanoProcessor.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav.wcfg}
+open_wave_config {C:/Users/MSI/Lab 9-10/SimNanoProcessor_behav1.wcfg}
+source SimNanoProcessor.tcl
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
